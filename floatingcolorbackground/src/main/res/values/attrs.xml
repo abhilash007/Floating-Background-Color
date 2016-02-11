@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FloatingColorBackgroundView">
+        <attr name="pibroBgColor1" format="color" />
+        <attr name="pibroBgColor2" format="color" />
+        <attr name="pibroBgColor3" format="color" />
+        <attr name="pibroBgColor4" format="color" />
+        <attr name="pibroBgColor5" format="color" />
+        <attr name="pibroBgColor6" format="color" />
+        <attr name="pibroBgColor7" format="color" />
+        <attr name="pibroBgColor8" format="color" />
+    </declare-styleable>
+</resources>

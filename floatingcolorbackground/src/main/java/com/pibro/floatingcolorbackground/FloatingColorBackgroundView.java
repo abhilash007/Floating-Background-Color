@@ -10,18 +10,20 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.os.SystemClock;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 
 public class FloatingColorBackgroundView extends View {
-
+    int color1=0xffa60ca6,color2=0xff00dddd,color3=0xffa60ca7,color4=0xffff0000,color5=0xff900C3F,color6=0xff1EE867,color7=0xff00E9FC,color8=0xffA10CF6;
     private static final long mElapsedRealtime;
-    private final int[] mColors;
-    private final short[] mIndices;
-    private final float[] mVertices;
-    private final int[] mLocation;
-    private final Matrix mMatrix;
-    private final Paint mPaint;
+    private int[] mColors;
+    private short[] mIndices;
+    private float[] mVertices;
+    private int[] mLocation;
+    private Matrix mMatrix;
+    private Paint mPaint;
     private Bitmap mBitmap;
     static {
         mElapsedRealtime = SystemClock.elapsedRealtime();
@@ -37,7 +39,7 @@ public class FloatingColorBackgroundView extends View {
 
     public FloatingColorBackgroundView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        int color1=0xffa60ca6,color2=0xff00dddd,color3=0xffa60ca7,color4=0xffff0000,color5=0xff900C3F,color6=0xff1EE867,color7=0xff00E9FC,color8=0xffA10CF6;
+
 
         /** get custom attrs for tabs and container  **/
 
@@ -58,6 +60,8 @@ public class FloatingColorBackgroundView extends View {
         this.mMatrix = new Matrix();
         this.mPaint = new Paint(2);
         this.mBitmap = CreateCanvas();
+
+
     }
     public Bitmap CreateCanvas() {
         Bitmap createBitmap = Bitmap.createBitmap(128, 128, Config.ARGB_8888);
@@ -87,4 +91,30 @@ public class FloatingColorBackgroundView extends View {
             invalidate();
         }
     }
+    public void setBgColors(int[] indicatorColor ) {
+        if(indicatorColor.length==8) {
+            Log.e("indicatorColor","indicatorColor  :  "+indicatorColor.length);
+            this.color1 = indicatorColor[0];
+            this.color2 = indicatorColor[1];
+            this.color3 = indicatorColor[2];
+            this.color4 = indicatorColor[3];
+            this.color5 = indicatorColor[4];
+            this.color6 = indicatorColor[5];
+            this.color7 = indicatorColor[6];
+            this.color8 = indicatorColor[7];
+            this.mColors = new int[]{color1, color2,color3, color4,color5, color6, color7, color8};
+            this.mIndices = new short[]{(short) 0, (short) 1, (short) 2, (short) 0, (short) 2, (short) 3};
+            this.mVertices = new float[]{0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, 1.0f, 0.0f};
+            this.mLocation = new int[2];
+            this.mMatrix = new Matrix();
+            this.mPaint = new Paint(2);
+            this.mBitmap = CreateCanvas();
+        }
+        else
+            Toast.makeText(getContext(),"error",Toast.LENGTH_SHORT).show();
+
+    }
+
+
+
 }

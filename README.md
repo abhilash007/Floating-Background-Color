@@ -1,4 +1,4 @@
-# Floating-Color-Background
+# Floating-Background-Color
 
 ![Floating-Color-Background](https://github.com/abhilash007/Floating-Color-Background/blob/master/ScreenShot/FloatingBackgroundColorView.gif)
 [Youtube](https://www.youtube.com/watch?v=5p4X8r-sU0Q)

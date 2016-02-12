@@ -27,6 +27,7 @@
   3.  Change colors in xml
   
         <com.pibro.floatingcolorbackground.FloatingColorBackgroundView
+            android:id="@+id/floatingcolorbackground_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:pibroBgColor1="#ffa60ca6"

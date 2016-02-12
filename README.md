@@ -45,6 +45,9 @@
         FloatingColorBackgroundView floatingColorBackgroundView = (FloatingColorBackgroundView)findViewById(R.id.floatingcolorbackground_view);
         floatingColorBackgroundView.setBgColors(new int[]{0xffa60ca6, 0xff00dddd,0xff000000, 0xffff0000,0xff000000, 0xff000000, 0xff000000, 0xff000000});
   
+#Compatibility
+  
+  * Android GINGERBREAD 2.3+
   
 # Changelog
 

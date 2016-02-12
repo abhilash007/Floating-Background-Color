@@ -7,7 +7,7 @@
   1. Include the library as local library project or add the dependency in your build.gradle.
         
         dependencies {
-            compile 'com.pibro.floatingcolorbackground:floatingcolorbackground:1.0.0'
+            compile 'com.pibro.floatingcolorbackground:floatingcolorbackground:1.0.1'
         }
 
   2. Include the FloatingColorBackgroundView widget in your layout. This should usually be placed

@@ -28,16 +28,16 @@
   3.
   
         <com.pibro.floatingcolorbackground.FloatingColorBackgroundView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:pibroBgColor1="#ffa60ca6"
-        app:pibroBgColor2="#ff00dddd"
-        app:pibroBgColor3="#ff00E9FC"
-        app:pibroBgColor4="#ffff0000"
-        app:pibroBgColor5="#ff900C3F"
-        app:pibroBgColor6="#ff1EE867"
-        app:pibroBgColor7="#ff00E9FC"
-        app:pibroBgColor8="#ffA10CF6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:pibroBgColor1="#ffa60ca6"
+            app:pibroBgColor2="#ff00dddd"
+            app:pibroBgColor3="#ff00E9FC"
+            app:pibroBgColor4="#ffff0000"
+            app:pibroBgColor5="#ff900C3F"
+            app:pibroBgColor6="#ff1EE867"
+            app:pibroBgColor7="#ff00E9FC"
+            app:pibroBgColor8="#ffA10CF6"
         />
   
       

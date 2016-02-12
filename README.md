@@ -40,6 +40,10 @@
             app:pibroBgColor7="#ff00E9FC"
             app:pibroBgColor8="#ffA10CF6"
         />
+  4.
+        
+        FloatingColorBackgroundView floatingColorBackgroundView = (FloatingColorBackgroundView)findViewById(R.id.floatingcolorbackground_view);
+        floatingColorBackgroundView.setBgColors(new int[]{0xffa60ca6, 0xff00dddd,0xff000000, 0xffff0000,0xff000000, 0xff000000, 0xff000000, 0xff000000});
   
       
    

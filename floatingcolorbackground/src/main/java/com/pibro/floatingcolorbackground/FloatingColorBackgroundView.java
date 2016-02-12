@@ -92,8 +92,7 @@ public class FloatingColorBackgroundView extends View {
         }
     }
     public void setBgColors(int[] indicatorColor ) {
-        if(indicatorColor.length==8) {
-            Log.e("indicatorColor","indicatorColor  :  "+indicatorColor.length);
+        try {
             this.color1 = indicatorColor[0];
             this.color2 = indicatorColor[1];
             this.color3 = indicatorColor[2];
@@ -109,9 +108,15 @@ public class FloatingColorBackgroundView extends View {
             this.mMatrix = new Matrix();
             this.mPaint = new Paint(2);
             this.mBitmap = CreateCanvas();
+        } catch (Exception e) {
+            this.mColors = new int[]{color1, color2,color3, color4,color5, color6, color7, color8};
+            this.mIndices = new short[]{(short) 0, (short) 1, (short) 2, (short) 0, (short) 2, (short) 3};
+            this.mVertices = new float[]{0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, 1.0f, 0.0f};
+            this.mLocation = new int[2];
+            this.mMatrix = new Matrix();
+            this.mPaint = new Paint(2);
+            this.mBitmap = CreateCanvas();
         }
-        else
-            Toast.makeText(getContext(),"error",Toast.LENGTH_SHORT).show();
 
     }
 

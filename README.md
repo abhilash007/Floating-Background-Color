@@ -7,7 +7,7 @@
   1. Include the library as local library project or add the dependency in your build.gradle.
         
         dependencies {
-            compile 'com.pibro.floatingcolorbackground:floatingcolorbackground:1.0.1'
+            compile 'com.pibro.floatingcolorbackground:floatingcolorbackground:1.0.2'
         }
 
   2. Include the FloatingColorBackgroundView widget in your layout. This should usually be placed
@@ -39,7 +39,7 @@
             app:pibroBgColor7="#ff00E9FC"
             app:pibroBgColor8="#ffA10CF6"
         />
-  4.  Change colors by code (You Should pass 8 arguments, Otherwise it will not work)
+  4.  Change colors by code
         
         FloatingColorBackgroundView floatingColorBackgroundView = (FloatingColorBackgroundView)findViewById(R.id.floatingcolorbackground_view);
         floatingColorBackgroundView.setBgColors(new int[]{0xffa60ca6, 0xff00dddd,0xff000000, 0xffff0000,0xff000000, 0xff000000, 0xff000000, 0xff000000});
@@ -50,7 +50,7 @@
   
 # Changelog
 
-### Current Version: 1.0.1    
+### Current Version: 1.0.2    
 
 # Developed By
 

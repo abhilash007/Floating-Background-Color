@@ -4,8 +4,6 @@
 [Youtube](https://www.youtube.com/watch?v=5p4X8r-sU0Q)
 # Usage
 
-*For a working implementation of this project see the `sample/` folder.*
-
   1. Include the library as local library project or add the dependency in your build.gradle.
         
         dependencies {

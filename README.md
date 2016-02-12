@@ -1,6 +1,6 @@
 # Floating-Color-Background
 
-
+![Floating-Color-Background](https://github.com/abhilash007/Floating-Color-Background/blob/master/ScreenShot/FloatingBackgroundColorView.gif)
 # Usage
 
 *For a working implementation of this project see the `sample/` folder.*
